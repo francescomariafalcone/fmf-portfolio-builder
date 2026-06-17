@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   api: {
-    bodyParser: {
-      sizeLimit: '50mb',
-    },
+    bodyParser: false,
+    responseLimit: '50mb',
   },
 }
 
